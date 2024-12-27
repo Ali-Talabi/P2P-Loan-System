@@ -1,0 +1,104 @@
+/* بدنه صفحه */
+body {
+  background-image: url("phone-mock-up-red-notebook.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* کارت‌ها */
+.card {
+  background: rgba(42, 42, 42, 0.8);
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* عنوان کارت */
+.card-header {
+  background-color: #fc2e20;
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+/* فرم */
+.form-label {
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.form-control {
+  background: #333;
+  border: 2px solid rgba(193,50,53,0.8);
+  border-radius: 10px;
+  padding: 12px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  background: #444;
+  border-color: #fc2e20;
+  box-shadow: 0 0 10px rgba(253, 127, 32, 0.2);
+}
+
+/* دکمه */
+.btn {
+  background-color: #fc2e20;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e53935;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(253, 127, 32, 0.3);
+}
+
+/* لیست تاریخچه وام */
+.list-group-item {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.list-group{
+    min-height: 340px;
+    padding: 20px;
+
+}
+
+/* تنظیمات واکنش‌گرایی */
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%; /* تنظیم عرض برای دیوها در دستگاه‌های موبایل */
+    margin-bottom: 20px;
+  }
+}

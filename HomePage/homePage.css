@@ -1,0 +1,130 @@
+/* تنظیمات پس‌زمینه ثابت برای کل صفحه */
+body {
+    background-image: url("credit-card-coffee-notebook-mock-up.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+/* نوار ناوبری */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #EE4649;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 18px;
+    color: white !important;
+    padding: 12px 18px;
+    transition: color 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #EE4649 !important;
+}
+
+.navbar .ml-3 .btn-outline-light {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* باکس اصلی که پس‌زمینه تار دارد */
+.bg-overlay {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    margin-top: 100px; /* فاصله از بالای صفحه به اندازه ارتفاع نوار ناوبری */
+    background-color: rgba(0, 0, 0, 0.7); /* پس‌زمینه تار */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px); /* اثر تاری بر پس‌زمینه */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* تنظیمات عنوان */
+.intro-quick-actions h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+/* تنظیمات پاراگراف */
+.intro-quick-actions p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    animation: slideInFromRight 0.5s ease-in-out;
+}
+
+/* تنظیمات دکمه‌ها */
+.quick-actions .btn {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.quick-actions .btn-danger:hover {
+    background-color: #EE4649;
+    transform: translateY(-2px);
+}
+
+.quick-actions .btn-warning {
+    background-color: #FF9800;
+    color: white;
+}
+
+.quick-actions .btn-warning:hover {
+    background-color: #F57C00;
+    transform: translateY(-2px);
+}
+
+/* تنظیمات فرم جستجو */
+.loan-search form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.loan-search .form-control {
+    margin-bottom: 15px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.loan-search .btn {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.loan-search .btn-danger:hover {
+    background-color: #EE4649;
+}
+
+/* انیمیشن‌های سف[_{{{CITATION{{{_1{](https://github.com/buribalazs/smooth-drag-order/tree/7b40d21d076c3e31765f61481f537beaf4c5ec9f/README.md)[_{{{CITATION{{{_2{](https://github.com/Laramiadell/IM/tree/b01150ba203c684d7cc023ff1847914db219c8ef/courses%2Findex.php)[_{{{CITATION{{{_3{](https://github.com/Agilbay04/VLMS-JTI/tree/ac9dee3ecf421da62ff9cf5b76dee9de633b83de/bootstrap-4.6.0%2Fsite%2Fcontent%2Fdocs%2F4.6%2Fcomponents%2Fnavbar.md)[_{{{CITATION{{{_4{](https://github.com/Saurabh-Pandey79/BusinessWebsiteForACServicing/tree/06791782a0aed87eccfdc62cee66dea31231e696/about.php)[_{{{CITATION{{{_5{](https://github.com/MaxAlphaEngineer/inlab/tree/d9b9d28a382d710ee8038219d9a62d4943511abf/resources%2Fviews%2Fhome.blade.php)[_{{{CITATION{{{_6{](https://github.com/guillaumepoucet/portfolio/tree/b726b507273b866792005a938f08723e80654777/nav.php)[_{{{CITATION{{{_7{](https://github.com/rkustas/techarticles/tree/598d65a5c026d9ecd3c7f0258f4a44f93e7029d0/client%2Fpages%2F_document.js)[_{{{CITATION{{{_8{](https://github.com/themrzlyv/movieland/tree/e10cbc7fda8f8cf1ef44fd0328e11ba52715d0bd/src%2Fpages%2F_document.js)[_{{{CITATION{{{_9{](https://github.com/SantiSL5/ANGULARJS_FW_PHP_MVC_OO/tree/2fd91086fa2eea7c56948aaa023a1c5c0ece9e1b/frontend%2Fassets%2Finc%2Ftop_page_cart.php)
