@@ -1,0 +1,135 @@
+/* بدنه صفحه */
+body {
+  background-image: url("flat-lay-cyber-monday-sale-elements-black-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+  overflow: hidden; /* جلوگیری از اسکرول */
+}
+
+/* انیمیشن fade-in */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* کارت ثبت‌نام */
+.card {
+  background: rgba(42, 42, 42, 0.7); /* پس‌زمینه شفاف با مات شدن */
+  backdrop-filter: blur(10px); /* مات شدن پشت زمینه */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  width: 100%;
+  max-width: 400px; /* عرض کارت */
+  margin-top: 20px; /* فاصله از بالا */
+  margin-bottom: 20px; /* فاصله از پایین */
+}
+
+/* کارت در حال hover */
+.card:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7); /* سایه بیشتر در هنگام hover */
+  transform: translateY(-5px); /* حرکت کمی به سمت بالا */
+}
+
+/* عنوان */
+h3 {
+  color: #fc2e20; /* قرمز */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.text-center{
+    color: #fff;
+}
+/* اینپوت‌ها */
+.form-control {
+  background: rgba(0,0,0,0.3); /* مشکی روشن */
+  border: 2px solid rgba(0,0,0,0.7);
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 15px; /* فاصله بین اینپوت‌ها */
+  transition: all 0.3s ease;
+}
+
+/* حالت فوکوس اینپوت */
+.form-control:focus {
+  background: #3a3a3a; /* خاکستری روشن‌تر */
+  border-color: #fc2e20; /* قرمز */
+  box-shadow: 0 0 10px rgba(252, 46, 32, 0.6);
+}
+
+/* لیبل‌ها */
+.form-label {
+  color: #e0e0e0; /* خاکستری کم‌رنگ */
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* دکمه‌ها */
+.btn {
+  background-color: #fc2e20; /* قرمز تند */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase; /* حروف بزرگ‌تر */
+  margin-top: 15px; /* فاصله از ورودی‌ها */
+}
+
+/* دکمه در حالت hover */
+.btn:hover {
+  background-color: #e4261f; /* قرمز تیره‌تر */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(253, 127, 32, 0.3);
+}
+
+/* جلوگیری از تغییر رنگ دکمه در حالت active و focus */
+.btn:focus, .btn:active {
+  outline: none;
+  background-color: #fc2e20; /* قرمز */
+  box-shadow: none;
+}
+
+/* پیوند‌ها */
+a {
+  color: #fc2e20;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* پیوند‌ها در حالت hover */
+a:hover {
+  text-decoration: underline;
+  color: #e4261f;
+}
+
+/* واکنش‌گرایی */
+@media (max-width: 576px) {
+  .card {
+    width: 90%;
+    padding: 20px; /* کاهش فضای داخلی */
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .form-control {
+    padding: 10px 15px;
+  }
+  .btn {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,147 @@
+/* بدنه صفحه */
+body {
+  background-image: url("top-view-online-shopping-concept.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* انیمیشن fade-in */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* کارت پروفایل */
+.card {
+  background: rgba(42, 42, 42, 0.8); 
+  backdrop-filter: blur(10px); 
+  border: 2px solid #3B3A3A;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  min-width: 400px;
+  min-height: 95vh;
+  margin-right: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* حرکت کارت به بالا */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7); /* تغییر سایه کارت */
+}
+
+/* هدر پروفایل */
+.profile-header h4 {
+  color: #fc2e20;
+  font-weight: 600;
+}
+
+/* امتیاز اعتباری */
+.credit-score span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* نمودار امتیاز */
+.credit-chart canvas {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* تاریخچه تراکنش‌ها */
+.transaction-history .list-group-item {
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* افزودن انیمیشن‌های حرکت و سایه */
+}
+
+.transaction-history .list-group-item:hover {
+  transform: translateY(-5px); /* حرکت آیتم به بالا */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* تغییر سایه آیتم */
+}
+
+/* دکمه‌ها */
+.btn {
+  padding: 12px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.profile-header {
+  border: 2px solid rgba(124, 117, 117, 1.00);
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: #fc2e20;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e4261f;
+}
+
+.btn-danger {
+  background-color: #e4261f;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #d41414;
+}
+
+/* دکمه حذف کوچک‌تر به شکل ضربدر */
+.btn-remove {
+  padding: 3px 6px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+
+.credit-chart {
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px auto; 
+  max-width: 400px; 
+}
+
+.credit-chart canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; 
+}
+
+#customLegend {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap; /* توضیحات به چند خط تقسیم شوند */
+  justify-content: center;
+  gap: 10px; /* فاصله بین آیتم‌ها */
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* فاصله بین مربع رنگ و متن */
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
